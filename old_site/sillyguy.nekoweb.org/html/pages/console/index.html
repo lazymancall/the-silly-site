@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://sillyfrank.neocities.org/media/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Eggsite - The website of sillyfrank</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <div style="display:flex;">
+            <div >
+                <table style="width:25%">
+                  <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td> </td>
+                    <td>░</td>
+                    <td>▒</td>
+                    <td>▓</td>
+                    <td>█</td>
+                  </tr>
+                </table>
+                <p>brush shape</p>
+                <div>
+                  <select name="brush-shape" id="brush-shape">
+                  <option value="volvo">square</option>
+                  <option value="saab">circle</option>
+                  </select>
+                </div>
+                <p>brush / eraser</p>
+                <div>
+                  <select name="brush-shape" id="brush-shape">
+                  <option value="volvo">brush</option>
+                  <option value="saab">eraser</option>
+                  </select>
+                </div>
+                <p>width</p>
+                <div class="slidecontainer">
+                  <input type="range" min="25" max="100" value="50" class="slider" id="canvas-width">
+                </div>
+                <p>height</p>
+                <div class="slidecontainer">
+                  <input type="range" min="25" max="100" value="50" class="slider" id="canvas-height">
+                </div>
+                <p>brush size</p>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="50" value="25" class="slider" id="canvas-brush-size">
+                </div>
+                <p>text size</p>
+                <div class="slidecontainer">
+                  <input type="range" min="10" max="40" value="25" class="slider" id="canvas-text-size">
+                </div>
+                <input type="checkbox" id="canvas-sides" name="canvas-sides">
+                <label for="canvas-sides"> width equals height</label><br>
+                <input type="button" id="clear-canvas" name="clear-canvas" value="clear canvas"><br>
+            </div>
+            <div>
+                <canvas id="SizeReadingSample" width=383 height=383 style="border: 1pt solid white" > <p id="printing"> </p></canvas>
+            </div>
+            <div>
+                <p id="p1"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script> onStart() </script>
+    </body>
+</html>

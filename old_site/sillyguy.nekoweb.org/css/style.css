@@ -1,0 +1,268 @@
+:root {
+  --red: #D82222;
+  --yellow: #FFFF39;
+  --blue: #1010C3;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white);
+}
+
+div {
+  color: var(--black);
+  text-align: center;
+  }
+
+a {
+  color: var(--black);
+}
+
+h1 {
+  color: var(--black);
+  }
+  
+p {
+  color: var(--black);
+  }
+  
+  
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 786px) {
+    [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.h1-silly {
+    font-size:1em;
+}
+ 
+.div-start {
+  background-color: var(--white);
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  max-height: 90%;
+}
+ 
+.div-scroll {
+  max-height: 200px;
+  padding: 20px;
+  display: inline-block; 
+  text-align: left; 
+  vertical-align: top; 
+  Overflow-y: scroll; 
+}
+
+.div-scroll-text {
+  Overflow-y: scroll; 
+  display:inline-block; 
+  text-align: left; 
+  vertical-align: top; 
+  padding: 20px;  
+  max-height: 125px;
+}
+
+.div-text {
+  display:inline-block; 
+  text-align: left; 
+  vertical-align: top; 
+  padding: 20px;  
+  max-height: 200px;
+  height: 175px;
+}
+
+.div-img {
+    display:inline-block; 
+    vertical-align: top;
+}
+
+.div-theme {
+  font-family: Consolas;
+  font-size:0.4em;
+  letter-spacing: 0.2em;
+  height:100%; 
+  overflow:hidden; 
+  margin: auto; 
+}
+
+.div-comside {
+  display:inline-block; 
+  vertical-align: top;  
+  padding: 20px; 
+  text-align: right;
+}
+
+.div-commms {
+  display:inline-block; 
+  vertical-align: top;
+}
+.div-gallery {
+  letter-spacing: 0.2em;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px; 
+}
+
+.div-gallery-back {
+  display:inline-block; 
+  vertical-align: top;  
+  padding: 20px; 
+  text-align: right;
+}
+
+.div-gallery-showcase {
+  padding: 20px;
+  display: inline-block; 
+  text-align: left; 
+  vertical-align: top; 
+  Overflow-y: scroll; 
+  height:250px; 
+  max-height:90%;
+}
+
+.div-prices {
+  padding: 20px;
+  display: inline-block; 
+  text-align: left; 
+  vertical-align: top; 
+  height:200px; 
+  max-height:100%;
+  Overflow-y: scroll; 
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
