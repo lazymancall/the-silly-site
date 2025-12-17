@@ -1,0 +1,97 @@
+body {
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/88378500_S42Qu2JVTIh4WwK.png?1726042449"), url("https://f2.toyhou.se/file/f2-toyhou-se/images/88372841_mXDEAJUzUPwklfs.png");
+  background-repeat: repeat;
+  font-family: Consolas ;
+  margin:0;
+	display:flex;
+	height:88vh;
+	align-items:center;
+}
+
+.div-1 {
+  background-image: url("https://sillyguy.nekoweb.org/img/checkered_dark.png");
+  background-color: #C7C7C7;
+  background-repeat: repeat-x;
+  border: solid 2px;
+  box-shadow: inset 0 0 0 4px #fff;
+  background-size: auto;
+  text-align: center;
+}
+
+.div-2 {
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/88372841_mXDEAJUzUPwklfs.png");
+  background-repeat: repeat;
+  border: solid 2px #7D7D7D;
+  width: 50%;
+  margin: 4px;
+  
+  background-size: auto;
+}
+
+.div-3 {
+  border: 20px solid transparent; /* Required for border-image */
+  border-image: url("https://sillyguy.nekoweb.org/img/border1.png") 24 round;
+}
+
+.div-4 {
+  width:75%; 
+  margin-left: auto; 
+  margin-right: auto;
+  display: flex;
+}
+
+.div-5 {
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/88372956_e7duL0JlC3BkkbJ.png"),url("https://f2.toyhou.se/file/f2-toyhou-se/images/88372841_mXDEAJUzUPwklfs.png");
+  background-repeat: repeat;
+  border: solid 2px #7D7D7D;
+  width: 50%;
+  margin: 4px;
+  background-size: auto;
+}
+
+.div-6 {
+  display: flex;
+  margin: auto;
+}
+
+.div-7 {
+  border: 20px solid transparent; /* Required for border-image */
+  border-image: url("https://sillyguy.nekoweb.org/img/border1.png") 24 round;
+  width: 50%;
+}
+
+.div-8 {
+  background-image: url("https://sillyguy.nekoweb.org/img/checkered_dark.png");
+  background-color: #C7C7C7;
+  background-repeat: repeat-x;
+  border: solid 2px;
+  box-shadow: inset 0 0 0 4px #fff;
+  background-size: auto;
+  text-align: center;
+  display:flex; 
+  justify-content:space-between;
+}
+
+.div-9 {
+  background-image: url("https://sillyguy.nekoweb.org/img/checkered_light.png");
+  background-color: #DEDEDE;
+  background-repeat: repeat-x;
+  border: solid 2px;
+  border-color: #DEDEDE;
+  box-shadow: inset 0 0 0 4px #fff;
+  background-size: auto;
+  text-align: center;
+  display:flex; 
+  justify-content:space-between;
+}
+
+.div-10 {
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/88372841_mXDEAJUzUPwklfs.png");
+  background-repeat: repeat;
+  border: solid 2px #DEDEDE;
+  color: #DEDEDE;
+  width: 50%;
+  margin: 4px;
+  
+  background-size: auto;
+}
